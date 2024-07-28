@@ -1,7 +1,7 @@
 import logo from "../assets/logo.svg"
 import NavBarText from "./NavbarText"
 
-export default function TopNavigationBar(props: any) {
+export default function TopNavigationBar() {
     return (
         <div className="w-full py-[1%] px-[6%]">
             <div className="flex flex-row justify-between">
