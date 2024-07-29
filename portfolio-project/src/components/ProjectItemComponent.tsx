@@ -6,8 +6,8 @@ export default function ProjectItemComponent(props:any){
             
             <h2 className="text-base my-[8%] text-start">{props.project.description}</h2>
 
-            <div className="grid grid-cols-3 gap-5 ">
-                {props.project.techs.map((tech:string, index:number)=><div className="flex-1 bg-violet-600 p-1 font-bold rounded-lg" key={index}>{tech}</div>)}
+            <div className="grid grid-cols-3 gap-y-5 gap-x-2 ">
+                {props.project.techs.map((tech:string, index:number)=><div className="flex-1 p-1 text-sm flex items-center justify-center  bg-violet-600  font-bold rounded-full" key={index}>{tech}</div>)}
             </div>
         </a>
     )

@@ -79,9 +79,9 @@ function App() {
       <div className="px-[18%] py-[8%]">
 
         <h1 className="  text-3xl">Hi, my name is</h1>
-        <p  className=" font-bold  text-7xl">Ryan Onil Barrion</p>
+        <p  className=" font-bold  text-6xl">Ryan Onil Barrion</p>
 
-        <h2 className="text-7xl font-bold py-[2%]">I am a Software Developer</h2>
+        <h2 className="text-6xl font-bold py-[2%]">I am a Software Engineer</h2>
 
         <p className="text-lg pt-4 w-[60%] leading-8 tracking-normal ">
           I am a software engineer and an AI enthusiast, driven by a passion for technology and innovation.
@@ -132,7 +132,7 @@ function App() {
       {/*PROJECTS*/}
       <div className="px-[8%] mt-[10%]">
         <h1 className="text-5xl font-extrabold">Some of the things I've built</h1>
-        <div className="grid grid-cols-3 gap-10 py-[5%]">
+        <div className="grid grid-cols-3 gap-5 py-[5%]">
           {projects.map((project:Project,index:number)=><ProjectItemComponent key={index} project={project}/>)}
 
         </div>
@@ -140,7 +140,7 @@ function App() {
 
       {/* Skills */}
 
-      <div className="mt-[10%] px-[10%]">
+      <div className="mt-[10%] px-[10%] mb-[2%]">
         <h1 className=" font-bold text-5xl mb-4">Technologies I have worked with</h1>
         {
           tech_sections.map((section:string, index:number)=><TechnlogyItems sectionTitle={section} technologies={sec_items[index]}/>)
