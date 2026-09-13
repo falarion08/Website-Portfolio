@@ -2,23 +2,33 @@
 
 
 :root {
-  --background: hsl(222 , 47%, 11%);
+  --background: hsl(222, 47%, 11%);
   --foreground: hsl(210 40% 98%);
-  --sage-green : hsl( 145 45% 48%);  
+  --sage-green: hsl(145 45% 48%);
   --forest-green: hsl(120, 61%, 34%);
-  --default-text-color : hsl(215, 18%, 51%);
+  --default-text-color: hsl(215, 18%, 51%);
+
+  --foreground:  hsl( 222, 30%, 55%);
 }
 
 @theme {
   --color-sage-green: var(--sage-green);
-  --color-forest-green:var(--forest-green);
+  --color-forest-green: var(--forest-green);
   --font-roboto-mono: var(--font-roboto-mono);
   --font-roboto: var(--font-roboto);
 }
+
 body {
   background: var(--background);
   color: var(--default-text-color);
   font-family: var(--font-roboto), sans-serif;
 }
 
+.icon-hero-effect {
+  @apply backdrop-blur-xl border ;
+}
 
+
+.icon-hero-effect:hover {
+  @apply text-sage-green border border-sage-green
+}

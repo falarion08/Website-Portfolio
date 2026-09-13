@@ -54,9 +54,10 @@ export default function Page() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="icon-hero-effect z-0"
                   >
                     <Icon
-                      className="h-8 w-8 hover:text-white transition-colors"
+                      className="h-8 w-8  transition-colors z-10 "
                     />
                   </a>
                 );
